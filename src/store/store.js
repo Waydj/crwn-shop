@@ -3,7 +3,7 @@ import storage from "redux-persist/lib/storage";
 import logger from "redux-logger";
 import { rootReducer } from "./root-reducer";
 import { persistReducer, persistStore } from "redux-persist";
-import thunk from "redux-thunk";
+// import thunk from "redux-thunk";
 import createSagaMiddleware from "redux-saga";
 import { rootSaga } from "./root-saga";
 
