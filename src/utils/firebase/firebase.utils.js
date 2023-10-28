@@ -72,7 +72,7 @@ export const getCategoriesAndDocuments = async () => {
 
 export const createUserDocumentFromAuth = async (
   userAuth,
-  additionalInformation = { displayName: "aleksa" }
+  additionalInformation = {}
 ) => {
   if (!userAuth) return;
 
@@ -96,7 +96,7 @@ export const createUserDocumentFromAuth = async (
     }
   }
 
-  return userDocRef;
+  return userSnapshot;
 };
 
 export const createAuthUserWithEmailAndPassword = async (email, password) => {
